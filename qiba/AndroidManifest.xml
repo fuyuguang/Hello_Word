@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.levin.qiba"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    
+    <!-- 屏幕禁止休眠 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 读写文件的权限 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 友盟错误汇报 -->
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.levin.qiba.activity.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.levin.qiba.activity.AddCarActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.levin.qiba.activity.DonateActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.levin.qiba.activity.DonateResultActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.levin.qiba.activity.MyCarActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.levin.qiba.activity.MyFavActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.levin.qiba.activity.PayActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.levin.qiba.activity.PayResultActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.levin.qiba.activity.SettingActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.levin.qiba.activity.SysMessageActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.levin.qiba.activity.TradeRecordActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="default_hint_text">#BFBFBF</color>
+    <color name="bg_common">#EAEAEA</color>
+    <color name="tabMedium">#2B2B2B</color>
+    <color name="tabDark">#000000</color>
+    <color name="tabTransparent">#10ffffff</color>
+    <color name="red">#ff0033</color>
+    <color name="white">#fff</color>
+    <color name="black">#000</color>
+    <color name="bind_weibo">#6b4848</color>
+    <color name="transparent">#00000000</color>
+    <color name="commend_time">#646464</color>
+    <color name="pop_item_selected">#1f1f1f</color>
+    <color name="apply_title_color">#ffffff</color>
+    <color name="apply_name_color">#ffffff</color>
+    <color name="apply_introduce_color">#5f5f60</color>
+    <color name="apply_downbutton_text_color">#ffffff</color>
+    <color name="pwdColor">#7e5e94</color>
+    <color name="common_bg">#2e292e</color>
+    <color name="pwd_title_color">#847f84</color>
+    <color name="author_repley_cmt">#7b3d70</color>
+    <color name="system_news_color">#6e537f</color>
+    <color name="news_reply_item_press">#35293c</color>
+    <color name="drafts_item_error">#585858</color>
+    <color name="drafts_item_content">#a1a1a1</color>
+    <color name="my_profile_address_checked">#a275be</color>
+    <color name="my_profile_profileitem_normal">#524d53</color>
+    <color name="my_profile_profileitem_choose">#503c5a</color>
+    <color name="new_sort_default_bg_color">#1d1a1d</color>
+    <color name="new_sort_select_bg_color">#443c47</color>
+    <color name="new_sort_default_font_color">#6c6c6c</color>
+    <color name="new_sort_select_font_color">#1d1a1d</color>
+    <color name="round_image_background">#272327</color>
+    <color name="TextColorBlack">#FF000000</color>
+    <color name="TextColorWhite">#FFFFFFFF</color>
+    <color name="TextColorGray">#FF505050</color>
+    <color name="ToastBgColor">#FF424242</color>
+
+
+    <!-- ============================================ -->
+    <!-- 个人主页 tab切换选中的颜色 -->
+    <color name="wash_tab_color">#00A3FF</color>
+    <color name="order_tab_color">#FF6C00</color>
+    <color name="list_devider">#d4d4d4</color>
+    
+</resources>

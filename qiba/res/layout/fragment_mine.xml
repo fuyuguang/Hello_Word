@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/setting_root_sv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <!-- 设置界面  fragment 布局 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/setting_profile_rl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <com.androidex.widget.RoundAsyncImageView
+                android:id="@+id/mine_header_iv"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@color/transparent" />
+
+            <RelativeLayout
+                android:id="@+id/mine_login_rl"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/mine_header_iv" >
+
+                <TextView
+                    android:id="@+id/mine_nickname_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="您还没有登录哦~"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/mine_login_bt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/mine_nickname_tv"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/mine_login_bg_selector"
+                    android:text="马上登陆"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/setting_sys_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/mine_account"
+                style="@style/profile_layout_style" >
+
+                <TextView            
+                    android:id="@+id/setting_share_app_tv"
+                    style="@style/profile_textview_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/myprofile_title_h2_left_margins"
+                    android:drawableLeft="@drawable/icon_mine_account"
+                    android:text="@string/mine_discount" />
+
+                <ImageView
+                    android:id="@+id/setting_share_app_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/right_arrow" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/myprofile_title_h2_left_margins"
+                android:background="@color/list_devider" />
+
+            <RelativeLayout
+                android:id="@+id/mine_pay"
+                style="@style/profile_layout_style" >
+
+                <TextView
+                    style="@style/profile_textview_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/myprofile_title_h2_left_margins"
+                    android:drawableLeft="@drawable/icon_mine_pay"
+                    android:text="@string/mine_pay" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/right_arrow" />
+
+                <TextView
+                    android:id="@+id/font_setting"
+                    style="@style/profile_textview_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="35dp"
+                    android:text="大" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/myprofile_title_h2_left_margins"
+                android:background="@color/list_devider" />
+
+            <RelativeLayout
+                android:id="@+id/mine_donate"
+                style="@style/profile_layout_style" >
+
+                <TextView
+                    style="@style/profile_textview_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/myprofile_title_h2_left_margins"
+                    android:drawableLeft="@drawable/icon_mine_donate"
+                    android:text="@string/mine_donate" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/right_arrow" />
+
+                <TextView
+                    style="@style/profile_textview_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="35dp"
+                    android:text="" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/myprofile_title_h2_left_margins"
+                android:background="@color/list_devider" />
+
+            <RelativeLayout
+                android:id="@+id/mine_message"
+                style="@style/profile_layout_style" >
+
+                <TextView
+                    style="@style/profile_textview_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/myprofile_title_h2_left_margins"
+                    android:drawableLeft="@drawable/icon_mine_message"
+                    android:text="@string/mine_message" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/right_arrow" />
+
+                <TextView
+                    style="@style/profile_textview_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="35dp"
+                    android:text="" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/myprofile_title_h2_left_margins"
+                android:background="@color/list_devider" />
+
+            <RelativeLayout
+                android:id="@+id/mine_trade"
+                style="@style/profile_layout_style" >
+
+                <TextView
+                    style="@style/profile_textview_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/myprofile_title_h2_left_margins"
+                    android:drawableLeft="@drawable/icon_mine_trade"
+                    android:text="@string/mine_trade" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/right_arrow" />
+
+                <TextView
+                    style="@style/profile_textview_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="35dp"
+                    android:text="" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/myprofile_title_h2_left_margins"
+                android:background="@color/list_devider" />
+
+            <RelativeLayout
+                android:id="@+id/mine_fav"
+                style="@style/profile_layout_style" >
+
+                <TextView
+                    style="@style/profile_textview_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/myprofile_title_h2_left_margins"
+                    android:drawableLeft="@drawable/icon_mine_fav"
+                    android:text="@string/mine_fav" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/right_arrow" />
+
+                <TextView
+                    style="@style/profile_textview_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="35dp"
+                    android:text="" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/myprofile_title_h2_left_margins"
+                android:background="@color/list_devider" />
+
+            <RelativeLayout
+                android:id="@+id/mine_carmanager"
+                style="@style/profile_layout_style" >
+
+                <TextView
+                    style="@style/profile_textview_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/myprofile_title_h2_left_margins"
+                    android:drawableLeft="@drawable/icon_mine_carmanager"
+                    android:text="@string/mine_carmanager" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/right_arrow" />
+
+                <TextView
+                    style="@style/profile_textview_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="35dp"
+                    android:text="" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/myprofile_title_h2_left_margins"
+                android:background="@color/list_devider" />
+
+            <RelativeLayout
+                android:id="@+id/mine_setting"
+                style="@style/profile_layout_style" >
+
+                <TextView
+                    style="@style/profile_textview_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/myprofile_title_h2_left_margins"
+                    android:drawableLeft="@drawable/icon_mine_setting"
+                    android:text="@string/mine_sys" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/right_arrow" />
+
+                <TextView
+                    style="@style/profile_textview_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="35dp"
+                    android:text="" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/myprofile_title_h2_left_margins"
+                android:background="@color/list_devider" />
+
+            <RelativeLayout
+                android:id="@+id/mine_share"
+                style="@style/profile_layout_style" >
+
+                <TextView
+                    style="@style/profile_textview_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/myprofile_title_h2_left_margins"
+                    android:drawableLeft="@drawable/icon_mine_share"
+                    android:text="@string/mine_share" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/right_arrow" />
+
+                <TextView
+                    style="@style/profile_textview_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="35dp"
+                    android:text="" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/myprofile_title_h2_left_margins"
+                android:background="@color/list_devider" />
+
+            <RelativeLayout
+                android:id="@+id/mine_advice"
+                style="@style/profile_layout_style" >
+
+                <TextView
+                    style="@style/profile_textview_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/myprofile_title_h2_left_margins"
+                    android:drawableLeft="@drawable/icon_mine_advice"
+                    android:text="@string/mine_advice" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/right_arrow" />
+
+                <TextView
+                    style="@style/profile_textview_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="35dp"
+                    android:text="" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/myprofile_title_h2_left_margins"
+                android:background="@color/list_devider" />
+
+            <RelativeLayout
+                android:id="@+id/mine_service"
+                style="@style/profile_layout_style" >
+
+                <TextView
+                    style="@style/profile_textview_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/myprofile_title_h2_left_margins"
+                    android:drawableLeft="@drawable/icon_mine_server"
+                    android:text="@string/mine_servercenter" />
+
+                <TextView
+                    style="@style/profile_textview_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="35dp"
+                    android:text="400-186-1555" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/myprofile_title_h2_left_margins"
+                android:background="@color/list_devider" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

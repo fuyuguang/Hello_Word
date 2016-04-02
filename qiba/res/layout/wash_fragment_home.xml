@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.levin.qiba"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.levin.qiba.activity.view.BGABanner
+        android:id="@+id/banner1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:pointAutoPlayAble="true"
+        app:pointAutoPlayInterval="2000"
+        app:pointContainerBackground="#200a"
+        app:pointContainerHeight="20dp"
+        app:pointContainerWidth="match_parent"
+        app:pointEdgeSpacing="10dp"
+        app:pointFocusedImg="@drawable/point_focused"
+        app:pointGravity="bottom|center_horizontal"
+        app:pointSpacing="5dp"
+        app:pointUnfocusedImg="@drawable/point_unfocused"
+        app:pointVisibility="true" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <com.levin.qiba.activity.view.PagerSlidingTabStrip
+            android:id="@+id/indicator"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_gravity="center_vertical"
+            android:background="@color/white"
+            android:textColor="@drawable/tab_font_style"
+            android:textSize="14sp"
+            app:pstsIndicatorColor="@color/wash_tab_color" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</LinearLayout>

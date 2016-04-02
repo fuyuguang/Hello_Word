@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_radio"
+    android:layout_width="fill_parent"
+    android:layout_height="55dp"
+    android:layout_gravity="bottom"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" 
+    android:background="@drawable/bottom_bar_bg">
+
+    <Button
+        style="@style/main_bottom_tab_radio_button"
+        android:drawableTop="@drawable/tab_running_selector"
+        android:tag="radio_button_0"
+        android:text="@string/tab_running" />
+
+    <Button
+        style="@style/main_bottom_tab_radio_button"
+        android:drawableTop="@drawable/tab_history_selector"
+        android:tag="radio_button_1"
+        android:text="@string/tab_history" />
+
+    <Button
+        style="@style/main_bottom_tab_radio_button"
+        android:drawableTop="@drawable/tab_begin_selector"
+        android:tag="radio_button_2"
+        android:text="@string/tab_begin" />
+
+    <Button
+        style="@style/main_bottom_tab_radio_button"
+        android:drawableTop="@drawable/tab_find_selector"
+        android:tag="radio_button_3"
+        android:text="@string/tab_find" />
+    
+    <Button
+        style="@style/main_bottom_tab_radio_button"
+        android:drawableTop="@drawable/tab_me_selector"
+        android:tag="radio_button_4"
+        android:text="@string/tab_me" />
+
+</LinearLayout>

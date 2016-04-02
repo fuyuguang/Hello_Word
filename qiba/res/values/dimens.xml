@@ -1,0 +1,5 @@
+<resources>
+
+    <dimen name="myprofile_title_h2_left_margins">20dp</dimen>
+
+</resources>

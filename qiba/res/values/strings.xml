@@ -1,0 +1,101 @@
+<resources>
+
+    <!-- qiba tab-->
+    
+    <string name="app_name">骑叭</string>
+    
+    <string name="tab_running">运动</string>
+    <string name="tab_history">历史</string>
+    <string name="tab_begin">开始</string>
+    <string name="tab_find">发现</string>
+    <string name="tab_me">我的</string>
+    <!-- qiba -->
+
+    <string name="tab_washcar">历史</string>
+    <string name="tab_order">开始</string>
+    <string name="tab_4s">发现</string>
+    <string name="tab_mine">我的</string>
+
+    <!-- xlistview -->
+    <string name="xlistview_header_hint_normal">下拉可以刷新&#8230;</string>
+    <string name="xlistview_header_hint_ready">松开可以刷新&#8230;</string>
+    <string name="xlistview_header_hint_loading">正在加载&#8230;</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">上拉加载更多</string>
+    <string name="xlistview_footer_hint_ready">松开查看更多</string>
+    <string name="xlistview_footer_hint_no_more_comment">没有更多评论了,你也评论点吧!</string>
+    <string name="xlistview_footer_hint_no_more_author_comment">没有更多楼主回复了</string>
+
+    <!-- 通用 -->
+    <string name="cancel">取消</string>
+    <string name="confirm">确定</string>
+    <string name="system_tip">系统提示</string>
+    <string name="title_bar_back_string">"返回 "</string>
+    <string name="net_msg_error">当前网络不可用，请检查网络设置</string>
+    <string name="operate_succ">操作成功</string>
+    <string name="operate_fail">操作失败</string>
+    <string name="deleting">正在删除</string>
+    <string name="prompt_msg">提示信息</string>
+    <string name="confirm_delete">确定要删除吗？</string>
+    <string name="no_net">没有网络</string>
+    <string name="loading">数据加载中...</string>
+    <string name="sinaweibo">新浪微博</string>
+    <string name="qq">QQ</string>
+    <string name="qzone">QQ空间</string>
+    <string name="tencentweibo">腾讯微博</string>
+    <string name="account_logout">退出账号</string>
+    <string name="edit_name_hint">输入昵称</string>
+    <string name="edit_hint">昵称只允许4-24个字符.仅支持中文、英文、数字、下划线.请不要使用不雅文字或联系方式作为昵称,一旦发现封锁账号.</string>
+    <string name="binding_text">立即绑定</string>
+    <string name="unbinding_text">取消绑定</string>
+    <string name="why_oauth">为什么授权</string>
+    <string name="sd_title">提示</string>
+    <string name="sd_message">您的SD卡未挂载好</string>
+    <string name="wx_friend_title">"分享一条有趣的内容"</string>
+    <string name="share_txt">分享给好友</string>
+    <string name="wxfriend">微信朋友</string>
+    <string name="wxgroup">微信好友圈</string>
+    <string name="sms">短信</string>
+    <string name="errcode_success">发送成功</string>
+    <string name="errcode_cancel">发送取消</string>
+    <string name="errcode_deny">发送被拒绝</string>
+    <string name="errcode_unknown">发送返回</string>
+    <string name="network_timeout">网络超时，检查网络</string>
+
+    <!-- 腾讯微博授权错误信息码 -->
+    <string name="tencent_weibo_error_ret_0">成功返回</string>
+    <string name="tencent_weibo_error_ret_1"> 参数错误</string>
+    <string name="tencent_weibo_error_ret_2">频率受限</string>
+    <string name="tencent_weibo_error_ret_3">鉴权失败</string>
+    <string name="tencent_weibo_error_ret_4">服务器内部错误</string>
+    <string name="tencent_weibo_error_ret_5">用户错误</string>
+    <string name="tencent_weibo_error_ret_6">未注册微博</string>
+    <string name="tencent_weibo_error_ret_7">未实名认证</string>
+
+    <!-- qipa tab -->
+
+    
+    
+    <!-- tab -->
+    <string name="home_tab_washcar">洗车</string>
+    <string name="home_tab_order">订单</string>
+    <string name="home_tab_4s">4s店</string>
+    <string name="home_tab_mine">我的</string>
+    <!-- 我的 -->
+    <string name="mine_discount">我的账户</string>
+    <string name="mine_pay">我要充值</string>
+    <string name="mine_donate">我要转赠</string>
+    <string name="mine_message">系统消息</string>
+    <string name="mine_trade">交易记录</string>
+    <string name="mine_fav">我的收藏</string>
+    <string name="mine_carmanager">车辆管理</string>
+    <string name="mine_sys">系统设置</string>
+    <string name="mine_share">好友分享</string>
+    <string name="mine_advice">投诉建议</string>
+    <string name="mine_servercenter">客服中心</string>
+    <!-- 设置 -->
+    <string name="setting_title">设置</string>
+    <string name="setting_edit_pwd">修改密码</string>
+    <string name="setting_msg_push">系统消息推送</string>
+    <string name="setting_about_us">关于我们</string>
+</resources>
