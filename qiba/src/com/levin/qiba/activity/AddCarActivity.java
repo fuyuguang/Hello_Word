@@ -4,4 +4,10 @@ import com.levin.qipa.base.BaseLoadingActivity;
 
 public class AddCarActivity extends BaseLoadingActivity {
     
+	
+	
+	public static void main(String[] args){
+		
+		
+	}
 }
