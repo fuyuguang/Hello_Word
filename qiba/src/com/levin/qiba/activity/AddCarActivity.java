@@ -23,4 +23,10 @@ public class AddCarActivity extends BaseLoadingActivity {
 		System.out.println("method test 2");
 		
 	}
+	
+	public void hotfix(){
+		
+		System.out.println("hotfix");
+		
+	}
 }
