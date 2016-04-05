@@ -10,4 +10,11 @@ public class AddCarActivity extends BaseLoadingActivity {
 		
 		
 	}
+	
+	
+	public void test1(){
+		
+		System.out.println("method test 1");
+		
+	}
 }
